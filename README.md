@@ -1,8 +1,7 @@
 
 README.md
 
-markdown
-🧠 YOLO11 Object Detection – Custom Model Training
+YOLO11 Object Detection – Custom Model Training
 
 This repository contains a complete training and inference pipeline for a custom object detection model using [Ultralytics YOLO](https://github.com/ultralytics/ultralytics), trained on a labeled dataset in YOLO format.
 

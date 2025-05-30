@@ -52,15 +52,7 @@ There is other way of getting images and then using Lable studio or something to
 
 Next getting them in this format :
 
-yolo/
-└── data/
-    ├── train/
-    │   ├── images/
-    │   └── labels/
-    └── validation/
-        ├── images/
-        └── labels/
-
+![Folder Structure](s1.png)
 
 To achieve this tho :
 
@@ -112,13 +104,7 @@ Finally after everything :
 
 Inside your yolo/data/ folder, you will see:
 
-data/
-├── train/
-│   ├── images/
-│   └── labels/
-└── validation/
-    ├── images/
-    └── labels/
+![Folder Structure](s2.png)
 
 After all this... 
 
@@ -178,6 +164,7 @@ Also check:
 results.png for training graphs
 opt.yaml and train_batch*.jpg for diagnostics
 
+
 RUNNING the model :
 
 Run this command after the training :
@@ -188,6 +175,10 @@ The script takes two arguments, “model” and “source”:
 
 –model : Path to the trained model weights (e.g. “runs/detect/train/weights/best.pt”)
 –source: Path to a image file (“test_img.jpg”), a folder of images (“img_dir”), a video file (“test_vid.mp4”), or the index for a connected USB camera (“usb0”).
+
+After everything is done the folder looks like this.
+
+![Folder Structure](s3.png)
 
 And then final command to run :
 

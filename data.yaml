@@ -1,0 +1,13 @@
+path: C:\Users\jeyas\OneDrive\Documents\yolo\data
+train: train\images
+val: validation\images
+
+nc: 3
+names: ['Aircrafts', 'Bird', 'Drone']
+
+roboflow:
+  workspace: subhranil-dey-wttsv
+  project: drone-detection-axkso
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/subhranil-dey-wttsv/drone-detection-axkso/dataset/3

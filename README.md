@@ -76,11 +76,9 @@ Organize them into folders correctly
 ========>   Run this in your command prompt (inside the yolo/ folder):
             
 Your folder should contain:
-
 IMG_3387.JPG, IMG_3387.txt, etc.
 
-All image files and their matching label files in one single folder.Your folder should contain:
-
+Your folder should contain:
 IMG_3387.JPG, IMG_3387.txt, etc.
 
 All image files and their matching label files in one single folder.

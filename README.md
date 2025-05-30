@@ -84,7 +84,7 @@ Shuffle them randomly
 Split them into training (e.g., 80%) and validation (e.g., 20%) sets
 Organize them into folders correctly
 
-========>   Run this in your command prompt (inside the yolo/ folder):
+==> Run this in your command prompt (inside the yolo/ folder):
             
 Your folder should contain:
 
@@ -237,7 +237,6 @@ And then final command to run :
 ## 📎 Credits
 
 * Ultralytics (YOLO): [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
-* Training guidance and script inspiration: [EJTech Tutorials](https://www.ejtech.io)
 
 ---
 

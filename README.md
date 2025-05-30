@@ -50,25 +50,15 @@ CUDA, cuDNN, etc., are included in the package — no need to manually download 
 
 Returns us the GPU version if all the before things are done perfectly until now.
 
+DATASET ARRANGEMENT :
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-DATASET __ First Took the dataset in Images and lables form.
+DATASET __ First Took the dataset in Images and lables folders.
 
 There is other way of getting images and then using Lable studio or something to draw boxes on each image and then preparing the dataset... Else form Online...
 
 Next getting them in this format :
 
-yolo/
-└── data/
-    ├── train/
-    │   ├── images/
-    │   └── labels/
-    └── validation/
-        ├── images/
-        └── labels/
-
+![Folder Structure](s1.png)
 
 To achieve this tho :
 
@@ -84,7 +74,7 @@ Shuffle them randomly
 Split them into training (e.g., 80%) and validation (e.g., 20%) sets
 Organize them into folders correctly
 
-==> Run this in your command prompt (inside the yolo/ folder):
+========>   Run this in your command prompt (inside the yolo/ folder):
             
 Your folder should contain:
 
@@ -120,13 +110,7 @@ Finally after everything :
 
 Inside your yolo/data/ folder, you will see:
 
-data/
-├── train/
-│   ├── images/
-│   └── labels/
-└── validation/
-    ├── images/
-    └── labels/
+![Folder Structure](s2.png)
 
 After all this... 
 
@@ -200,31 +184,14 @@ The script takes two arguments, “model” and “source”:
 
 After everything is done the folder looks like this.
 
-yolo/
-├── data/
-│   ├── train/
-│   │   ├── images/          # Training images
-│   │   └── labels/          # YOLO format labels
-│   └── validation/
-│       ├── images/          # Validation images
-│       └── labels/          # Validation labels
-├── runs/                    # Training logs and weights
-│   └── detect/
-│       └── train/
-│           ├── weights/     # Contains best.pt and last.pt
-│           └── results.png  # Training metrics graph
-├── data.yaml                # Dataset configuration file
-├── train_val_split.py       # Script to split data into train/val
-├── yolo_detect.py           # Inference script
-├── Training process ----.txt # Step-by-step training log
-├── yolov11s.pt              # Pretrained model (optional)
-└── testvidairtrack.mp4      # Optional test video (optional)
+![Folder Structure](s3.png)
 
 And then final command to run :
 
 >>   python yolo_detect.py --model=runs/detect/train/weights/best.pt --source=usb0  # Run on USB webcam (If your webcam is not usb0, try 0, 1, or check your OS's device list.)
 
 >>   python yolo_detect.py --model=runs/detect/train/weights/best.pt --source=testvidairtrack.mp4  # Run on vid.mp4 video file.
+
 
 
 ## ⚠️ Notes
